@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <!-- <div class="col-md-4 panel-menu">
+
+  </div> -->
+  <div class="sidenav">
+    <a href="#">SERVER</a>
+  </div>
+
+  <div class="col-md-8 panel-graphs container-fluid main">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+         <div class="col-md-12">
+            <app-card [chartType]="chart_memory" [chartName]="chart_memory_name"></app-card>
+         </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+         <div class="col-md-12">
+            <app-card [chartType]="chart_process" [chartName]="chart_process_name"></app-card>
+         </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+         <div class="col-md-12">
+            <app-card [chartType]="chart_requests" [chartName]="chart_requests_name"></app-card>
+         </div>
+      </div>
+    </div>
+</div>

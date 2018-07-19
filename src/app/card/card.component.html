@@ -1,0 +1,14 @@
+<div class="col-md-12 card">
+  <div class="card-header">
+    <h6>{{chart_name}}</h6>
+  </div>
+  <div *ngIf="chartType == 'uso-memoria'" class="card-content">
+    <app-uso-memoria></app-uso-memoria>
+  </div>
+  <div *ngIf="chartType == 'processamento'" class="card-content">
+    <app-processamento></app-processamento>
+  </div>
+  <div *ngIf="chartType == 'requisicoes'" class="card-content">
+    <app-requesicoes></app-requesicoes>
+  </div>
+</div>
